@@ -32,3 +32,9 @@ First, download the AzCopy V10 executable file to any directory on your computer
 [Linux x86-64 (tar)](https://aka.ms/downloadazcopy-v10-linux)  
 [Linux ARM64 Preview (tar)](https://aka.ms/downloadazcopy-v10-linux-arm64)  
 [macOS (zip)](https://aka.ms/downloadazcopy-v10-mac)  
+
+These files are compressed as a zip file (Windows and Mac) or a tar file (Linux). To download and decompress the tar file on Linux, see the documentation for your Linux distribution.  
+
+For detailed information on AzCopy releases see the [AzCopy release page.](https://github.com/Azure/azure-storage-azcopy/releases)  
+
+## Install AzCopy on Linux
