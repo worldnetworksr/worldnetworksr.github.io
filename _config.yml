@@ -101,7 +101,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Snowscan"
+  name             : "Networks"
   avatar           : "/assets/images/avatar.png"
   bio              : "Pentester, CTF player<br>HackTheBox ATeam"
   location         : "Canada"
