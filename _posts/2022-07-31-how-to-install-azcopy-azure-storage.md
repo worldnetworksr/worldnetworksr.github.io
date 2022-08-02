@@ -66,7 +66,7 @@ sudo rm -r azcopy_linux_amd64_*/
 sudo ls -lah /usr/bin/ | grep azcopy
 ```
 
-##Install AzCopy on Windows
+## Install AzCopy on Windows
 
 
 To install AzCopy on Windows, you can run the following PowerShell script, or you can download the zip file and run it from where ever you want. This script will add the AzCopy folder location to your system path so that you can run the AzCopy command from anywhere.
@@ -89,5 +89,5 @@ $userenv = [System.Environment]::GetEnvironmentVariable("Path", "User")
 [System.Environment]::SetEnvironmentVariable("PATH", $userenv + ";C:\Users\local\AzCopy", "User")
 ```
 
-I hope this helps you to install AzCopy and configure it. If you have any questions, feel free to leave a comment.
+I hope this helps you to install AzCopy on Linux and Windows. If you have any questions, feel free to leave a comment.
 
