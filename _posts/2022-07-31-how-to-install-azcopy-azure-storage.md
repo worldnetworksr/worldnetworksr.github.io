@@ -38,3 +38,52 @@ These files are compressed as a zip file (Windows and Mac) or a tar file (Linux)
 For detailed information on AzCopy releases see the [AzCopy release page.](https://github.com/Azure/azure-storage-azcopy/releases)  
 
 ## Install AzCopy on Linux
+
+To install AzCopy on Linux, you can run the following shell script, or you can download the [bash](https://drive.google.com/file/d/1wlHxdCltcI7xVLiz-tn9HV5X5vsOjYFp/view?usp=sharing) file and run it from where ever you want. This script will put the AzCopy executable into the /usr/bin folder so that you can run it from anywhere.
+
+```bash
+#!/bin/bash
+
+#Download AzCopy
+wget https://aka.ms/downloadazcopy-v10-linux
+
+#Expand Archive
+tar -xvf downloadazcopy-v10-linux
+
+#(Optional) Remove existing AzCopy version
+sudo rm /usr/bin/azcopy > /dev/null 2>&1
+
+#Remove unnecessary files
+sudo rm downloadazcopy-v10-linux
+
+#Move AzCopy to the destination you want to store it
+sudo cp ./azcopy_linux_amd64_*/azcopy /usr/bin/
+
+#Remove unnecessary files
+sudo rm -r azcopy_linux_amd64_*/
+
+#Check if the file exists
+sudo ls -lah /usr/bin/ | grep azcopy
+```
+
+##Install AzCopy on Windows
+
+
+To install AzCopy on Windows, you can run the following PowerShell script, or you can download the zip file and run it from where ever you want. This script will add the AzCopy folder location to your system path so that you can run the AzCopy command from anywhere.
+
+```powershell
+#Download AzCopy
+Invoke-WebRequest -Uri "https://aka.ms/downloadazcopy-v10-windows" -OutFile AzCopy.zip -UseBasicParsing
+ 
+#Curl.exe option (Windows 10 Spring 2018 Update (or later))
+curl.exe -L -o AzCopy.zip https://aka.ms/downloadazcopy-v10-windows
+ 
+#Expand Archive
+Expand-Archive ./AzCopy.zip ./AzCopy -Force
+ 
+#Move AzCopy to the destination you want to store it
+Get-ChildItem ./AzCopy/*/azcopy.exe | Move-Item -Destination "C:\Users\local\AzCopy\AzCopy.exe"
+ 
+#Add your AzCopy path to the Windows environment PATH (C:\Users\thmaure\AzCopy in this example), e.g., using PowerShell:
+$userenv = [System.Environment]::GetEnvironmentVariable("Path", "User")
+[System.Environment]::SetEnvironmentVariable("PATH", $userenv + ";C:\Users\local\AzCopy", "User")
