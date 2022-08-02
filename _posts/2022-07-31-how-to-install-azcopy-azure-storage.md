@@ -5,7 +5,7 @@ excerpt: "AzCopy is a command-line utility that you can use to copy blobs or fil
 date: 2022-07-31
 classes: wide
 header:
-  teaser: /assets/images/cloud-images/azcopy.png
+  teaser: /assets/images/cloud-images/azcopy-command.png
   teaser_home_page: true
   icon: /assets/images/hackthebox.webp
 categories:
