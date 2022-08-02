@@ -5,7 +5,7 @@ excerpt: "AzCopy is a command-line utility that you can use to copy blobs or fil
 date: 2022-07-31
 classes: wide
 header:
-  teaser: /assets/images/htb-writeup-delivery/delivery_logo.png
+  teaser: /assets/images/cloud-images/azcopy.png
   teaser_home_page: true
   icon: /assets/images/hackthebox.webp
 categories:
@@ -19,7 +19,7 @@ tags:
   - account
 ---
 
-![](/assets/images/htb-writeup-delivery/delivery_logo.png)
+![](/assets/images/cloud-images/azcopy.png)
 
 AzCopy is a command-line utility that you can use to copy blobs or files to or from a storage account. In this post, I will cover how to install AzCopy on Windows and Linux. AzCopy V10 is the currently supported version of AzCopy, it also adds additional functionality like sync of blob storage accounts and much more. First, download the AzCopy V10 executable file to any directory on your computer. AzCopy V10 is just an executable file, so there's nothing to install.
 
