@@ -87,3 +87,7 @@ Get-ChildItem ./AzCopy/*/azcopy.exe | Move-Item -Destination "C:\Users\local\AzC
 #Add your AzCopy path to the Windows environment PATH (C:\Users\thmaure\AzCopy in this example), e.g., using PowerShell:
 $userenv = [System.Environment]::GetEnvironmentVariable("Path", "User")
 [System.Environment]::SetEnvironmentVariable("PATH", $userenv + ";C:\Users\local\AzCopy", "User")
+```
+
+I hope this helps you to install AzCopy and configure it. If you have any questions, feel free to leave a comment.
+
