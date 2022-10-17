@@ -33,3 +33,14 @@ $ sudo apt update
 ```
 When prompted for the password, enter the sudo password.
 ![](/assets/images/debian-apache/update.png)
+
+Step 2: Install Apache 2 with the apt command.
+
+If you are a Linux pro you can install Apache from [source](https://httpd.apache.org/docs/2.4/install.html).
+Next in this step, install the Apache2 web server using the following command:
+```bash
+$ sudo apt install apache2 -y
+```
+![](/assets/images/debian-apache/install.png)
+
+You will be provided with a Y/n option to continue the installation. Hit y to continue.
