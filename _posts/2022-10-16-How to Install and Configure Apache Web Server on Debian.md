@@ -5,7 +5,7 @@ excerpt: "The Apache webserver is one of the most popular open-source web server
 date: 2022-10-16
 classes: wide
 header:
-  teaser: /assets/images/htb-writeup-delivery/delivery_logo.png
+  teaser: /assets/images/debian-apache/apache.png
   teaser_home_page: true
   icon: /assets/images/hackthebox.webp
 categories:
