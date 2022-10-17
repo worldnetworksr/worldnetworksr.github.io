@@ -1,0 +1,35 @@
+---
+layout: single
+title: How to Install and Configure Apache Web Server on Debian
+excerpt: "The Apache webserver is one of the most popular open-source web servers developed and maintained by the [Apache Software Foundation](https://www.apache.org). Apache is by far the most widely used web server application in Linux operating systems, but it can be used on almost all operating system platforms such as Windows, MAC OS, OS/2, and so on. It allows developers to publish their content over the Internet."
+date: 2022-10-16
+classes: wide
+header:
+  teaser: /assets/images/htb-writeup-delivery/delivery_logo.png
+  teaser_home_page: true
+  icon: /assets/images/hackthebox.webp
+categories:
+  - Web Server
+  - Installation
+tags:  
+  - apache2
+  - httpd
+  - debian
+---
+
+![](/assets/images/debian-apache/apache.png)
+
+The Apache webserver is one of the most popular open-source web servers developed and maintained by the [Apache Software Foundation](https://www.apache.org). Apache is by far the most widely used web server application in Linux operating systems, but it can be used on almost all operating system platforms such as Windows, MAC OS, OS/2, and so on. It allows developers to publish their content over the Internet.
+
+This article explains how to install and configure Apache web server on Debian 11 (Bullseye). The same steps also work under the older Debian versions and have been tested there as well.
+
+## Install Apache 2 on Debian Linux
+Follow the steps below to install Apache2 on your system.
+
+Step 1: Update system repositories
+First, we need to update the package sources in our operating system. To do this, run the following command in the terminal as sudo or root:
+```bash
+$ sudo apt update
+```
+When prompted for the password, enter the sudo password.
+![](/assets/images/debian-apache/update.png)
