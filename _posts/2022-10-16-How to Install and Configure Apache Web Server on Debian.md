@@ -182,6 +182,14 @@ Now test the configuration for any syntax errors:
 $ sudo apache2ctl configtest
 ```
 In case there is no error, you will receive the following output.
+
+
+
+
+
+
+
+
 ![](/assets/images/debian-apache/8.0.png)
 
 In some cases, you might receive the following error (in this case it happened during our tests on a Debian 10/11 systems):
@@ -195,7 +203,9 @@ Add the following line in it:
 
 ServerName example.com
 ![](/assets/images/debian-apache/10.0.png)
-Set a server name
+
+Set a server name.
+
 Once done, press Ctrl+O to save and then Ctrl+X to exit the file.
 
 After that run the following command:
@@ -213,6 +223,11 @@ Once done, again run the following command to test the configuration file:
 $ sudo apache2ctl configtest
 ```
 Now you will see the error has been removed.
+
+
+
+
+
 ![](/assets/images/debian-apache/11.0.png)
 
 Step 7: Verify Apache Configurations
