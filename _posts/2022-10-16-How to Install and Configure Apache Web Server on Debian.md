@@ -230,11 +230,11 @@ Now you will see the error has been removed.
 
 ![](/assets/images/debian-apache/11.0.png)
 
-Step 7: Verify Apache Configurations
+Step 4: Verify Apache Configurations
 After starting Apache you now can view that the configurations are working by either editing your /etc/host file on your computer or by editing your domain's DNS.
 ![](/assets/images/debian-apache/12.0.png)
 
-Step 4: Test if Apache is serving your domain name.
+Step 5: Test if Apache is serving your domain name.
 Now open the browser and navigate to:
 
 http://example.com
