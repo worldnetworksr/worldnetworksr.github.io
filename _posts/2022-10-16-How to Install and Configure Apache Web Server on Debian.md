@@ -234,10 +234,11 @@ Step 7: Verify Apache Configurations
 After starting Apache you now can view that the configurations are working by either editing your /etc/host file on your computer or by editing your domain's DNS.
 ![](/assets/images/debian-apache/12.0.png)
 
-Step 4: Test if Apache is serving your domain name
-Now open the browser and navigate to :
+Step 4: Test if Apache is serving your domain name.
+Now open the browser and navigate to:
 
 http://example.com
+
 Replace example.com with your own domain name.
 
 The following index page shows now you are able to access all your websites.
