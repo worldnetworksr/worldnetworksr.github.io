@@ -96,7 +96,8 @@ Note: If the firewall is running on your system, you will need to allow certain 
 ## Apache Virtual Hosting
 Apache provides virtual hosting feature that allow you to host multiple websites on a single server. In this section, we will host two website using the domain names example.com and example.net.
 
-Step 1: Make a Directory for Each Site
+Step 1: Make a Directory for Each Site.
+
 You’ll create a directory for each site that you’ll be hosting, within the /var/www folder.  This location newly created location is also dubbed the document root location; you’ll need to set this path later in the configuration file.  Sub the example.com and example.net for your domain names.
 ```bash
 $ sudo mkdir -p /var/www/domain.com/public_html
@@ -108,7 +109,7 @@ Step 2: Set Folder Permissions
 ```bash
 $ sudo chmod -R 755 /var/www
 ```
-Step 3: Set up an Index Page
+Step 3: Set up an Index Page.
 To see a home page you’ll want to make sure the index.html file is created for each domain. Now we will create a sample index page to test our example.com and example.net sites. To do so, we will create an HTML file using the nano editor as follows:
 ```bash
 $ sudo nano /var/www/example.com/public_html/index.html
@@ -143,7 +144,7 @@ $ sudo nano /etc/apache2/sites-available/example.net.conf
 $ sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/example.com.conf
 $ sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/example.net.conf
 ```
-Step 2: Edit the Config File for Each Site
+Step 2: Edit the Config File for Each Site.
 At the bare minimum, you’ll adjust and add the highlighted lines within the <VirtualHost *:80> and </VirtualHost> tags.
 
 *Note:* ServerAlias is the alternative name for your domain, in this case and in most, you’ll put www in front of the domain name so people can view the site by either www or non www (ServerName).
@@ -163,7 +164,7 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
 ```
 Save the file. Repeat this process for your example.net.conf file, be sure to update your ServerName, ServerAlias and DocumentRoot for your second domain.
 
-Step 3: Enable Your Config File
+Step 3: Enable Your Config File.
 Out of the box, your server is set to read the default 000-default.conf file.  But, in our previous step we made a new config file for each domain.  So, we will need to disable the default file.
 ```bash
 $ sudo a2dissite 000-default.conf
@@ -235,6 +236,8 @@ After starting Apache you now can view that the configurations are working by ei
 ![](/assets/images/debian-apache/12.0.png)
 
 Step 5: Test if Apache is serving your domain name.
+
+
 Now open the browser and navigate to:
 
 http://example.com
